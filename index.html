@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <style>
         body{
@@ -13,6 +14,13 @@
         h1{
             color:red;
             background-color: rgba(100, 158, 200, .8);
+        }
+        #clicky{
+            width: 60%;
+            height: 50px;
+            border-style: groove;
+            border-width: 3px;
+            font-size: 15px !important;
         }
     </style>
     <body style="text-align: center;">
@@ -36,6 +44,9 @@
             <br>
             <br>
             <input type="text" class="form-control" id=player2_id placeholder="enter your username">
-        </div> 
+        </div>
+        <br><br><br>
+        <button type="button" class="btn btn-danger" id="clicky" onclick="next_page()"><span class="glyphicon glyphicon-ok"></span> Press to continue </button>
+        <script src="main.js"></script>
     </body>
 </html>

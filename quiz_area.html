@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <style>
+        body{
+            background-color: darkgray;
+            background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/yellow-white-and-grey-diagonal-stripes-pattern_SB_PM.jpg);
+        }
+        #output{
+        background: white;
+        border-radius: 10px;
+        border-top: 10px solid #AA4465;
+        padding: 10px;
+        float: none;
+        text-align: left;
+        }
+    </style>
+    <body onload="ready_up()">
+        <h1 id="player1_name"></h1><span id="player1_correct">0</span>
+        <br>
+        <h1 id="player2_name"></h1><span id="player2_correct">0</span>
+        <center>
+            <h2 class="text-white"> Question Time! </h2>
+            <br><hr><br>
+            <h3> Asking: </h3><span id="quizzerinator"></span><br>
+            <h3> Answering: </h3><span id="answerinator"></span><br><br>
+            <div id="output" class="col-lg-6">
+            </div><br>
+            <div class="container">
+            <input id="number_1" type="number" class="form-control" placeholder="Enter number 1">
+            <br><br>
+            <input id="number_2" type="number" class="form-control" placeholder="Enter number 2">
+            </div>
+            <button type="button" id="button_submit" onclick="next_up_is()" class="btn btn-success">Confirm Numbers</button>
+        </center>
+        <script src="quiz_area.js"></script>
+    </body>
+</html>
