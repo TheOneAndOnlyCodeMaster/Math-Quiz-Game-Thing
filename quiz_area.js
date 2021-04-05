@@ -11,8 +11,10 @@ function ready_up(){
 function next_up_is(){
     number1 = document.getElementById("number_1").value;
     number2 = document.getElementById("number_2").value;
+    final_answer = parseInt(number1) * parseInt(number2);
     equation = number1 + symbolz + number2+"<br>";
     inputplace = "<h4>Answer:</h4> <input id='answer'><br>";
     button = "<button onclick='checkers()' class='btn btn-info'>confirm</button>";
     document.getElementById("output").innerHTML = equation + inputplace + button;
 }
+
