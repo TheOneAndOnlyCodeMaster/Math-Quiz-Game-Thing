@@ -1,8 +1,8 @@
 player1_name = localStorage.getItem("mathPerson1");
 player2_name = localStorage.getItem("mathPerson2");
 symbolz = "x";
-player1_score = document.getElementById("player1_correct").value;
-player2_score = document.getElementById("player2_correct").value;
+player1_score =0;
+player2_score =0;
 
 
 function ready_up(){
@@ -19,6 +19,9 @@ function next_up_is(){
     inputplace = "<h4>Answer:</h4> <input id='answer' class='form-control'><br>";
     button = "<button onclick='checkers()' class='btn btn-info'>confirm</button>";
     document.getElementById("output").innerHTML = equation + inputplace + button;
+    document.getElementById("number_1").innerHTML = "";
+    document.getElementById("number_2").innerHTML = "";
+
 }
 
 function checkers(){
@@ -35,7 +38,7 @@ function checkers(){
             document.getElementById("answerinator").innerHTML = currentPlayer;
 
         }
-        if(currentPlayer == player2_name){
+        if(currentPlayerQ == player2_name){
             currentPlayer = player1_name;
             currentPlayerQ = player2_name;
             player2_score = player2_score + 1;
@@ -57,4 +60,7 @@ function checkers(){
             document.getElementById("quizzerinator").innerHTML = currentPlayerQ;
             document.getElementById("answerinator").innerHTML = currentPlayer;        }
     }
+    document.getElementById("number_1").innerHTML = "";
+    document.getElementById("number_2").innerHTML = "";
+    document.getElementById("output").innerHTML = "";
 }
