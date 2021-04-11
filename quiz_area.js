@@ -34,6 +34,7 @@ function checkers(){
             currentPlayerQ = player2_name;
             player1_score = player1_score + 1;
             document.getElementById("player1_correct").innerHTML = player1_score;
+            document.getElementById("player2_correct").innerHTML = player2_score - 1;
             document.getElementById("quizzerinator").innerHTML = currentPlayerQ;
             document.getElementById("answerinator").innerHTML = currentPlayer;
 
@@ -43,6 +44,7 @@ function checkers(){
             currentPlayerQ = player2_name;
             player2_score = player2_score + 1;
             document.getElementById("player2_correct").innerHTML = player2_score;
+            document.getElementById("player1_correct").innerHTML = player1_score - 1;
             document.getElementById("quizzerinator").innerHTML = currentPlayerQ;
             document.getElementById("answerinator").innerHTML = currentPlayer;        }
     }
