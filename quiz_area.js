@@ -62,7 +62,7 @@ function checkers(){
             document.getElementById("quizzerinator").innerHTML = currentPlayerQ;
             document.getElementById("answerinator").innerHTML = currentPlayer;        }
     }
-    document.getElementById("number_1").innerHTML = "";
-    document.getElementById("number_2").innerHTML = "";
+    document.getElementById("number_1").value = "";
+    document.getElementById("number_2").value = "";
     document.getElementById("output").innerHTML = "";
 }
