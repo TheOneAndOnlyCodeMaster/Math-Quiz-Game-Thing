@@ -19,8 +19,8 @@ function next_up_is(){
     inputplace = "<h4>Answer:</h4> <input id='answer' class='form-control'><br>";
     button = "<button onclick='checkers()' class='btn btn-info'>confirm</button>";
     document.getElementById("output").innerHTML = equation + inputplace + button;
-    document.getElementById("number_1").innerHTML = "";
-    document.getElementById("number_2").innerHTML = "";
+    document.getElementById("number_1").value = "";
+    document.getElementById("number_2").value = "";
 
 }
 
